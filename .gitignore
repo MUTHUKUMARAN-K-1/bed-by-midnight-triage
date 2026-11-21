@@ -10,3 +10,10 @@ __pycache__/
 !.claude/skills/speckit-*/
 .claude/skills/speckit-*/*
 !.claude/skills/speckit-*/SKILL.md
+
+# Keep labeled source worksheets and row-level evaluation output local.
+*.csv
+*.CSV
+*.tsv
+*.xlsx
+*.private.json

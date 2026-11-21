@@ -12,6 +12,19 @@ Safety signals override the requested remedy. Injury/medical need, threat/violen
 
 This is a keyword baseline, not a deployable safety classifier. It can miss paraphrases or misread context, negation, and other languages. It does not yet use structured booking context to determine whether routine remedies are eligible. The baseline was verified only on synthetic tests. Add difficult or masked synthetic safety cases before drawing conclusions about accuracy.
 
+## Offline evaluation
+
+```sh
+python evaluate.py /path/to/tickets.csv
+python evaluate.py /path/to/tickets.csv --private-rows /private/path/results.private.json
+```
+
+Use a private UTF-8 CSV with `ticket_id`, `guest_requested`, `guest_message`, and `expected_outcome`. Use a unique, non-empty ticket ID in each data row. Expected labels are `safety` (also `safety handoff` or `handoff to safety agent`), `rebooking` (also `rebook`), or `refund`. Labels are case-insensitive and treat underscores and hyphens as spaces. Blank or unknown expected labels, duplicate IDs, malformed rows and an empty dataset fail evaluation instead of disappearing from the denominator. Expected labels are used only to score predictions, never to make them.
+
+Only aggregate JSON goes to standard output. Confusion matrix rows are expected categories; columns are predictions, including `unresolved`. Safety recall is the fraction of expected safety cases correctly routed and is `null` when there are no expected safety cases. A safety case predicted as unresolved still counts as a safety false negative. Equal class totals do not establish accuracy. A high score on one set does not validate a safety system for real guests.
+
+The optional second command writes a **new, private local file** containing `ticket_id`, `expected`, `ticket_type`, and `route`, but no guest message or request text. Keep the source and that file outside the checkout, do not share them, and commit only synthetic examples or approved aggregates. Common worksheet formats and private JSON exports are ignored by Git.
+
 ## Spec Kit (Claude Code)
 
 This repository is scaffolded with [official GitHub Spec Kit v1.4.3](https://github.com/github/spec-kit/releases/tag/v1.4.3), using the Claude Code integration and PowerShell scripts. The starting draft is [Safety-first booking support triage](specs/001-safety-first-triage/spec.md). The specification is not implemented or evaluated by adding these files.
