@@ -27,7 +27,7 @@ The optional second command writes a **new, private local file** containing `tic
 
 ### Labeled worksheet baseline
 
-The unchanged keyword classifier at commit [`7b90aaf`](https://github.com/MUTHUKUMARAN-K-1/bed-by-midnight-triage/commit/7b90aaf19d114da5d542a31159c4e592cc6fedc4) was run offline on all 60 unique rows of a supplied labeled worksheet. The worksheet and per-ticket results are not included.
+The unchanged keyword classifier at commit [`7b90aaf`](https://github.com/MUTHUKUMARAN-K-1/bed-by-midnight-triage/commit/7b90aaf19d114da5d542a31159c4e592cc6fedc4) was run offline on all 60 unique rows of a supplied labeled worksheet. The raw worksheet and per-ticket baseline predictions are not included.
 
 | Expected ↓ / Predicted → | Safety | Rebooking | Refund | Unresolved | Expected total |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -53,7 +53,7 @@ After reviewing the three missed safety labels, the rules were extended to recog
 
 The six remaining misses were expected rebookings routed to generic human review. The after result is **in-sample**: it uses the same worksheet that informed the changes, not a holdout set or evidence of production readiness. See the [replay aggregate](evaluation/worksheet-tuned.json).
 
-The [60 study results](evaluation/worksheet-study-results.json) contain only generated study IDs, ticket types and routes. Results were shuffled before numbering and cannot be matched back to the original worksheet from this repository. If the reviewing platform requires original IDs or verifies against original row order, use the separate private evidence in that authorized review channel. The original worksheet and ID mapping are not public.
+The [review routing list](evaluation/worksheet-routing-results.json) preserves the 60 original scenario ticket IDs and the worksheet order. Each row contains only `ticket_id`, `ticket_type`, and `route`. All six rows classified as safety use `handoff_to_safety_agent`. The raw worksheet, guest messages, guest names and booking references are not included. The earlier [shuffled study results](evaluation/worksheet-study-results.json) remain for reference.
 
 ## Spec Kit (Claude Code)
 

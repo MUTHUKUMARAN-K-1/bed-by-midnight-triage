@@ -1,0 +1,302 @@
+[
+  {
+    "ticket_id": "LIS-TKT-0001",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0002",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0003",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0004",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0005",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0006",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0007",
+    "ticket_type": "safety",
+    "route": "handoff_to_safety_agent"
+  },
+  {
+    "ticket_id": "LIS-TKT-0008",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0009",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0010",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0011",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0012",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0013",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0014",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0015",
+    "ticket_type": "safety",
+    "route": "handoff_to_safety_agent"
+  },
+  {
+    "ticket_id": "LIS-TKT-0016",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0017",
+    "ticket_type": "unresolved",
+    "route": "human_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0018",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0019",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0020",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0021",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0022",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0023",
+    "ticket_type": "safety",
+    "route": "handoff_to_safety_agent"
+  },
+  {
+    "ticket_id": "LIS-TKT-0024",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0025",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0026",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0027",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0028",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0029",
+    "ticket_type": "unresolved",
+    "route": "human_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0030",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0031",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0032",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0033",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0034",
+    "ticket_type": "safety",
+    "route": "handoff_to_safety_agent"
+  },
+  {
+    "ticket_id": "LIS-TKT-0035",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0036",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0037",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0038",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0039",
+    "ticket_type": "unresolved",
+    "route": "human_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0040",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0041",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0042",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0043",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0044",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0045",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0046",
+    "ticket_type": "safety",
+    "route": "handoff_to_safety_agent"
+  },
+  {
+    "ticket_id": "LIS-TKT-0047",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0048",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0049",
+    "ticket_type": "unresolved",
+    "route": "human_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0050",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0051",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0052",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0053",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0054",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0055",
+    "ticket_type": "safety",
+    "route": "handoff_to_safety_agent"
+  },
+  {
+    "ticket_id": "LIS-TKT-0056",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0057",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0058",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0059",
+    "ticket_type": "unresolved",
+    "route": "human_review"
+  },
+  {
+    "ticket_id": "LIS-TKT-0060",
+    "ticket_type": "unresolved",
+    "route": "human_review"
+  }
+]
