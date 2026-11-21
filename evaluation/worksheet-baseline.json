@@ -1,0 +1,43 @@
+{
+  "row_count": 60,
+  "expected_counts": {
+    "safety": 6,
+    "rebooking": 34,
+    "refund": 20
+  },
+  "predicted_counts": {
+    "safety": 3,
+    "rebooking": 29,
+    "refund": 21,
+    "unresolved": 7
+  },
+  "confusion_matrix": {
+    "safety": {
+      "safety": 3,
+      "rebooking": 1,
+      "refund": 1,
+      "unresolved": 1
+    },
+    "rebooking": {
+      "safety": 0,
+      "rebooking": 28,
+      "refund": 0,
+      "unresolved": 6
+    },
+    "refund": {
+      "safety": 0,
+      "rebooking": 0,
+      "refund": 20,
+      "unresolved": 0
+    }
+  },
+  "correct": 51,
+  "accuracy": 0.85,
+  "safety": {
+    "actual_positives": 6,
+    "true_positives": 3,
+    "false_negatives": 3,
+    "false_positives": 0,
+    "recall": 0.5
+  }
+}

@@ -25,6 +25,19 @@ Only aggregate JSON goes to standard output. Confusion matrix rows are expected 
 
 The optional second command writes a **new, private local file** containing `ticket_id`, `expected`, `ticket_type`, and `route`, but no guest message or request text. Keep the source and that file outside the checkout, do not share them, and commit only synthetic examples or approved aggregates. Common worksheet formats and private JSON exports are ignored by Git.
 
+### Labeled worksheet baseline
+
+The unchanged keyword classifier at commit [`7b90aaf`](https://github.com/MUTHUKUMARAN-K-1/bed-by-midnight-triage/commit/7b90aaf19d114da5d542a31159c4e592cc6fedc4) was run offline on all 60 unique rows of a supplied labeled worksheet. The worksheet and per-ticket results are not included.
+
+| Expected ↓ / Predicted → | Safety | Rebooking | Refund | Unresolved | Expected total |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Safety | 3 | 1 | 1 | 1 | 6 |
+| Rebooking | 0 | 28 | 0 | 6 | 34 |
+| Refund | 0 | 0 | 20 | 0 | 20 |
+| Predicted total | 3 | 29 | 21 | 7 | 60 |
+
+The baseline matched 51/60 labels (85% accuracy). It caught only 3/6 safety cases (50% recall): three safety false negatives, including two routed to routine remedy review and one routed to generic human review. It produced no safety false positives on this worksheet. This is one small evaluation of a keyword baseline, not a production safety validation; do not use the result to justify automatic routing or remedies for real guests. [Aggregate JSON](evaluation/worksheet-baseline.json).
+
 ## Spec Kit (Claude Code)
 
 This repository is scaffolded with [official GitHub Spec Kit v1.4.3](https://github.com/github/spec-kit/releases/tag/v1.4.3), using the Claude Code integration and PowerShell scripts. The starting draft is [Safety-first booking support triage](specs/001-safety-first-triage/spec.md). The specification is not implemented or evaluated by adding these files.
