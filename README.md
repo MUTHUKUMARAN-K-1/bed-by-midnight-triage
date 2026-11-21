@@ -10,7 +10,7 @@ The second command expects `ticket_id`, `guest_requested`, and `guest_message`. 
 
 Safety signals override the requested remedy. Injury/medical need, threat/violence, nowhere safe to wait, an unaccompanied minor, or stated fear of a person must go to a live safety agent. The prototype cannot book, issue holds, issue refunds or send any messages. Blank or conflicting requests go to human review.
 
-This is a keyword baseline, not a deployable safety classifier. It can miss paraphrases or misread context, negation, and other languages. It does not yet use structured booking context to determine whether routine remedies are eligible. The baseline was verified only on synthetic tests. Add difficult or masked synthetic safety cases before drawing conclusions about accuracy.
+This is a keyword baseline, not a deployable safety classifier. It can miss paraphrases or misread context, negation, and other languages. It does not yet use structured booking context to determine whether routine remedies are eligible. The synthetic tests and labeled worksheet checks below are not substitutes for independent safety testing.
 
 ## Offline evaluation
 
@@ -37,6 +37,23 @@ The unchanged keyword classifier at commit [`7b90aaf`](https://github.com/MUTHUK
 | Predicted total | 3 | 29 | 21 | 7 | 60 |
 
 The baseline matched 51/60 labels (85% accuracy). It caught only 3/6 safety cases (50% recall): three safety false negatives, including two routed to routine remedy review and one routed to generic human review. It produced no safety false positives on this worksheet. This is one small evaluation of a keyword baseline, not a production safety validation; do not use the result to justify automatic routing or remedies for real guests. [Aggregate JSON](evaluation/worksheet-baseline.json).
+
+### Targeted safety update: in-sample replay
+
+After reviewing the three missed safety labels, the rules were extended to recognize three combinations: a blood-sugar/diabetes cue alongside acute symptoms and relevant context; fear alongside a person following the guest; and a person identifying themselves as under 18 and alone. Anger and a callback request alone are not safety triggers. These rules still act on message text and do not execute remedies.
+
+| Measure on the same 60 rows | Original baseline | After targeted update |
+| --- | ---: | ---: |
+| Correct labels | 51/60 (85%) | 54/60 (90%) |
+| Safety recall | 3/6 (50%) | 6/6 (100%) |
+| Safety false negatives | 3 | 0 |
+| Safety false positives | 0 | 0 |
+| Rebooking labels matched | 28/34 | 28/34 |
+| Refund labels matched | 20/20 | 20/20 |
+
+The six remaining misses were expected rebookings routed to generic human review. The after result is **in-sample**: it uses the same worksheet that informed the changes, not a holdout set or evidence of production readiness. See the [replay aggregate](evaluation/worksheet-tuned.json).
+
+The [60 study results](evaluation/worksheet-study-results.json) contain only generated study IDs, ticket types and routes. Results were shuffled before numbering and cannot be matched back to the original worksheet from this repository. If the reviewing platform requires original IDs or verifies against original row order, use the separate private evidence in that authorized review channel. The original worksheet and ID mapping are not public.
 
 ## Spec Kit (Claude Code)
 

@@ -1,0 +1,302 @@
+[
+  {
+    "study_id": "STUDY-001",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-002",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-003",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-004",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-005",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-006",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-007",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-008",
+    "ticket_type": "unresolved",
+    "route": "human_review"
+  },
+  {
+    "study_id": "STUDY-009",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-010",
+    "ticket_type": "safety",
+    "route": "handoff_to_safety_agent"
+  },
+  {
+    "study_id": "STUDY-011",
+    "ticket_type": "unresolved",
+    "route": "human_review"
+  },
+  {
+    "study_id": "STUDY-012",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-013",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-014",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-015",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-016",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-017",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-018",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-019",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-020",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-021",
+    "ticket_type": "unresolved",
+    "route": "human_review"
+  },
+  {
+    "study_id": "STUDY-022",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-023",
+    "ticket_type": "safety",
+    "route": "handoff_to_safety_agent"
+  },
+  {
+    "study_id": "STUDY-024",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-025",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-026",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-027",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-028",
+    "ticket_type": "safety",
+    "route": "handoff_to_safety_agent"
+  },
+  {
+    "study_id": "STUDY-029",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-030",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-031",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-032",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-033",
+    "ticket_type": "unresolved",
+    "route": "human_review"
+  },
+  {
+    "study_id": "STUDY-034",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-035",
+    "ticket_type": "safety",
+    "route": "handoff_to_safety_agent"
+  },
+  {
+    "study_id": "STUDY-036",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-037",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-038",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-039",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-040",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-041",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-042",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-043",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-044",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-045",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-046",
+    "ticket_type": "unresolved",
+    "route": "human_review"
+  },
+  {
+    "study_id": "STUDY-047",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-048",
+    "ticket_type": "unresolved",
+    "route": "human_review"
+  },
+  {
+    "study_id": "STUDY-049",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-050",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-051",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-052",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-053",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-054",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-055",
+    "ticket_type": "rebooking",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-056",
+    "ticket_type": "safety",
+    "route": "handoff_to_safety_agent"
+  },
+  {
+    "study_id": "STUDY-057",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-058",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  },
+  {
+    "study_id": "STUDY-059",
+    "ticket_type": "safety",
+    "route": "handoff_to_safety_agent"
+  },
+  {
+    "study_id": "STUDY-060",
+    "ticket_type": "refund",
+    "route": "routine_review"
+  }
+]

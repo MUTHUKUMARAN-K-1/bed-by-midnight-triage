@@ -36,6 +36,38 @@ class TriageTests(unittest.TestCase):
             with self.subTest(message=message, request=request):
                 self.assertEqual(self.ticket(message, request)["route"], "human_review")
 
+    def test_contextual_safety_paraphrases(self):
+        examples = [
+            ("My sibling has diabetes and feels shaky after they missed a meal.", "injury_or_medical_need"),
+            ("A stranger keeps following us. We are frightened.", "fear_of_a_person"),
+            ("I am 13 years old. I need to wait here without a guardian.", "unaccompanied_minor"),
+            ("I'm 17 and staying here by myself.", "unaccompanied_minor"),
+        ]
+        for message, signal in examples:
+            with self.subTest(signal=signal):
+                for request in ("refund", "rebook", ""):
+                    r = self.ticket(message, request=request)
+                    self.assertEqual(r["ticket_type"], "safety")
+                    self.assertEqual(r["route"], "handoff_to_safety_agent")
+                    self.assertIn(signal, r["matched_signals"])
+                    self.assertEqual(r["next_action"], "no_action_executed")
+                    self.assertFalse(r["hold_allowed"])
+                    self.assertFalse(r["refund_allowed"])
+
+    def test_ordinary_anger_callback_and_isolated_words_are_not_safety(self):
+        examples = [
+            "I am furious about the cancellation. Have a manager call me back.",
+            "I have diabetes. Please call when the replacement is ready.",
+            "A person followed the directions but the property was closed.",
+            "I am 29 years old and I am travelling by myself.",
+            "I am 14 minutes late and standing here by myself.",
+            "I am 15 years old and I am here with my parent.",
+        ]
+        for message in examples:
+            with self.subTest(message=message):
+                self.assertEqual(self.ticket(message)["ticket_type"], "refund")
+                self.assertEqual(self.ticket(message, request="")["route"], "human_review")
+
     def test_label_not_used(self):
         result = triage(dict(ticket_id="synthetic", guest_message="Need help.", guest_requested="",
                              expected_outcome="refund"))
